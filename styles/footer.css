@@ -1,10 +1,33 @@
-footer {
-    background-color: darkgrey;
-    color: white;
+.footer {
+    background-color: rgb(45, 63, 80);
 }
 
-#pie {
-    padding: 50px;
-    margin-top: 360px;
+
+#nombre {
     text-align: center;
+    padding: 25px 0 0 0;
+    color: white;
+    text-decoration: solid;
+    text-transform: uppercase;
+    margin-top: 50%;
+
+}
+
+#copy {
+    padding: 0 0 0 0;
+    text-align: center;
+    text-decoration: solid;
+    color: rgb(189, 189, 210);
+}
+
+#politicas {
+    text-align: center;
+    padding: 0 0 25px;
+
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.5px 1px ;
 }
