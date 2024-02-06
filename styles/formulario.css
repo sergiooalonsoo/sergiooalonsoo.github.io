@@ -1,52 +1,18 @@
-*{
+* {
     box-sizing: border-box;
 }
-#container{
-    box-sizing: border-box;
-    width: 100%;
-    border: 1px solid white;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-
-
-}
-div.A{
-    width: 33.3333%;
-
-}
-div.B{
-    width: 33.33333%;
-
-}
-div.C{
-    width: 33.33333%;
-
-}
-input[text]{
-    box-sizing: border-box;
-    width: 100%;
-
-}
-
-div.containerA{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
 
 body {
     color: #fff;
     margin: 0;
     padding: 0;
+    
 }
 
 form {
-    
     margin: 50px auto;
     padding: 20px;
-
+   
 }
 
 form div {
@@ -58,16 +24,49 @@ label {
     margin-bottom: 5px;
 }
 
-
 button {
     background-color: #341c9c;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-   
 }
 
 button:hover {
     background-color: #2c07d3;
+}
+
+.container1,
+.container2,
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid white;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 15px; 
+}
+
+.container1 > div,
+.container2 > div,
+.container3 > div {
+    flex: 0 0 calc(33.333% - 10px); 
+    margin-bottom: 10px; 
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
 }
