@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/encabezado.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/formulario.css">
     <title>Formulario</title>
 </head>
 <body>
@@ -20,6 +21,78 @@
     </header>
     <div>
         <h1>Formulario</h1>
+        <form>
+            <div id="container">
+            <div class="A">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+            </div>
+            <div class="B">
+                <label for="Apellidos">Apellidos:</label>
+                <input type="text" id="Apellidos" name="Apellidos" required>
+            </div>
+            
+            <div class="C">
+                <label for="Correo">Correo electronico:</label>
+                <input type="email" id="Correo" name="Correo" required>
+            </div>
+        </div>
+        <div class="containerA">
+            <div>
+                <label for="Fecha">Fecha en la que se quiere hacer la reserva:</label>
+                <input type="date" id="Fecha" name="Fecha" required>
+            </div>
+            <div class="containerA2">
+                ¿Sois todos mayores de edad?
+                <label><input type="radio" name="Edad" value="Si" >Si</label>
+                <label><input type="radio" name="Edad" value="No">No</label>
+            </div>
+        </div>
+            <div>
+                <label for="Cantidad">Cantidad de personas que van a acudir al evento:</label>
+                <select id="Cantidad" name="Cantidad" required>
+                    <option value=" "></option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-20">11-20</option>
+                    <option value="21-30">21-30</option>
+                    <option value="31-40">31-40</option>
+                    <option value="41-50">41-50</option>
+                    <option value="51-60">51-60</option>
+                    <option value="61-70">61-70</option>
+                    <option value="71-80">71-80</option>
+                    <option value="81-90">81-90</option>
+                    <option value="91-100">91-100</option>
+                    <option value="101-110">101-110</option>
+                    <option value="111-120">111-120</option>
+               </select>
+            </div>
+            <div>
+                <label for="Tipo">¿Qué tipo de evento se quiere reservar?:</label>
+                <select id="Tipo" name="Tipo" required>
+                    <option value=" "></option>
+                    <option value="Cumpleaños">Cumpleaños</option>
+                    <option value="Graduacion">Graduación</option>
+                    <option value="Conciertos">Conciertos</option>
+                    <option value="Aniversario">Aniversario</option>
+                    <option value="Bodas">Bodas</option>
+                    <option value="Despedidas de soltero\soltera">Despedidas de soltero\soltera</option>
+                    <option value="Otro">Otro</option>
+                    </select>
+            </div>
+            
+            <div>
+                <label for="Otro">Si es otro tipo de evento ponganoslo aquí</label>
+                <input type="text" id="Otro" name="Otro">
+            </div>
+            <div>
+                <label><input type="checkbox" name="Aceptar" value="Aceptar" required>Aceptar que todo el material del evento que se rompa o que desaparezca se ara responsable la persona que reserva el evento y tendran sanciones economicas</label>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+            
+        
+              </form>
     </div>
 </body>
 <footer>
