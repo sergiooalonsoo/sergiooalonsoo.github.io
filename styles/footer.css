@@ -20,5 +20,6 @@ body {
 a:link, a:visited, a:active {
     text-decoration: none;
     color: white;
-    text-shadow: 0.5px 1px ;
+    text-shadow: 0.5px 1px;
+
 }
