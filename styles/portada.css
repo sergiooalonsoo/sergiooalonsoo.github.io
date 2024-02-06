@@ -1,0 +1,58 @@
+#prueba{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+img.prueba1{
+    max-width: 99%;
+}
+p.prueba2{
+    flex: 1;
+}
+@media (max-width: 767px){
+    #prueba{
+        display: inline;
+        align-items: center;
+        max-width: 5px;
+        padding: 5px;
+    }
+    img.prueba1{
+        max-width: 99%;
+    }
+    p.prueba2{
+        flex: 1;
+    }
+    
+
+}
+@media (min-width: 768px) and (max-width: 990px){
+    #prueba{
+        display: inline;
+        align-items: center;
+        max-width: 5px;
+        padding: 5px;
+    }
+    img.prueba1{
+        max-width: 99%;
+    }
+    p.prueba2{
+        flex: 1;
+    }
+    
+}
+@media (min-width: 991px){
+    #prueba{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    img.prueba1{
+        max-width: 100%;
+    }
+    p.prueba2{
+        flex: 1;
+    }
+    
+}
+
+    
