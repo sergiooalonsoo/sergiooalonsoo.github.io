@@ -67,6 +67,7 @@ input[type="date"] {
         padding: 10px 15px;
         border: none;
         border-radius: 5px;
+        margin-bottom: 200px;
     }
     
     button:hover {
@@ -117,6 +118,8 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 200px;
+
 }
 
 button:hover {
@@ -184,6 +187,8 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 200px;
+
 }
 
 button:hover {
