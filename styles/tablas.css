@@ -5,11 +5,26 @@ body {
 
 table {
     border-collapse: collapse;
-    margin: 0;
-    width: 100%;
+    width: 80%;
     box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 120px;
+    
+    
 }
 
+#tit {
+    color: #e1c160;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Red Hat Display", -apple-system, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Centarell,"Helvetica Neue",sans-serif;
+}
+
+.div1 {
+    text-align: center;
+}
 table tr {
     padding: .45em;
 }
@@ -17,7 +32,7 @@ thead tr {
     background-color: #6e0737;
 }
 tbody tr:nth-child(even) {
-    background-color: #eaeaea;
+    background-color: ;
 }
 table th,
 table td {
