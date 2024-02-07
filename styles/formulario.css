@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 /*Cogemos el texto le cambiamos el color y le aumentamos la letra y lo alineamos en el centro*/
+=======
+
+>>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
 h1{
     color: #e1c160;
     font-size: 40px;
@@ -9,7 +13,10 @@ h1{
     font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
+<<<<<<< HEAD
 /*Al cuerpo de la pagina no le metemos magenes y le ponemos la letra de color blanca*/
+=======
+>>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
 body {
     color: #fff;
     margin: 0;
@@ -44,15 +51,27 @@ input[type="radio"] {
 
 
     .container1,
-.container2,
-.container3 {
+    .container2,
+    .container3 {
+        
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px; 
     
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px; 
-   
-}
+    }
+ 
+    input[type="text"],
+    input[type="email"],
+    select,
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
 
+<<<<<<< HEAD
     /*A los input de esos tipos de les damos en todo el ancho que puedan coger  de damos un borde blanco y que bordee las esquinas*/
 input[type="text"],
 input[type="email"],
@@ -66,6 +85,8 @@ input[type="date"] {
 }
 
     /*Ocupa todo el ancho disponible le damos margen por abajo y con el padding para agregar espacio de relleno alrededor del contenido de un elemento*/
+=======
+>>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
     label {
         display: block;
         margin-bottom: 5px;
@@ -86,15 +107,11 @@ input[type="date"] {
     button:hover {
         background-color: #2c07d3;
     }
-
-
-
-
-
 }
 /*A los input de esos tipos de les damos en todo el ancho que puedan coger  de damos un borde blanco y que bordee las esquinas pero esta vez con la tablet*/
 @media (min-width: 768px) and (max-width: 990px){
     input[type="text"],
+<<<<<<< HEAD
 input[type="email"],
 select,
 input[type="date"] {
@@ -148,11 +165,59 @@ button {
 button:hover {
     background-color: #2c07d3;
 }
+=======
+    input[type="email"],
+    select,
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
 
+    .container1,
+    .container2,
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px; 
+        justify-content: space-between;
+        border: 1px solid #ccc;
+    }
+    .container1 > div,
+    .container2 > div,
+    .container3 > div {
+        flex: 0 0 calc(50% - 10px); 
+        margin-bottom: 0px;
+    }
 
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+>>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
+
+    button {
+        background-color: #341c9c;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 200px;
+        width: 99%;
+        display: flex;
+    }
+
+    button:hover {
+        background-color: #2c07d3;
+    }
 }
 /*Le metemos display warp para que si no entra todo en la pagina podamos ultilizar el scrol le ponemos margen hacia abajo y lo justificamos todo entre espacios*/
 @media (min-width: 991px){
+<<<<<<< HEAD
 .container1,
 .container2,
 .container3 {
@@ -217,4 +282,68 @@ button {
 button:hover {
     background-color: #2c07d3;
 }
+=======
+    .container1,
+    .container2,
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        border: 1px solid white;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-bottom: 15px; 
+    }
+
+    .container1 > div,
+    .container2 > div,
+    .container3 > div {
+        flex: 0 0 calc(33.333% - 10px); 
+        margin-bottom: 10px; 
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    form {
+        margin: 50px 0 0 0;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    form div {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    button {
+        background-color: #341c9c;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 200px;
+    }
+
+    button:hover {
+        background-color: #2c07d3;
+    }
+>>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
 }
