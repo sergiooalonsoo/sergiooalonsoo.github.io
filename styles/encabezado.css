@@ -1,11 +1,9 @@
+/* Este CSS afecta al body entero de todas las páginas para asignar el tipo de letra, color de fondo y color de la letra */
+
 body {
     background-color: #1d2a35;
     color: antiquewhite;
     font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-}
-
-#fondo {
-    background-color: #333;
 }
 
 #tel {
@@ -15,7 +13,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    }
+}
 
 #links {
     list-style-type:none;
