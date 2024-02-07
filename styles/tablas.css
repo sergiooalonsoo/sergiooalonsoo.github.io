@@ -32,7 +32,7 @@ thead tr {
     background-color: #6e0737;
 }
 tbody tr:nth-child(even) {
-    background-color: #6e0737;
+    background-color: rgb(29, 42, 53);
 }
 table th,
 table td {
@@ -76,4 +76,11 @@ thead th{
         background-color: #6e0737;
         color: #fff;
     }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    table {
+        border: 3px solid #6e0737;
+    }
+    
 }
