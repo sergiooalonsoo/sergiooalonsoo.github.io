@@ -24,10 +24,10 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    border:1px solid rgb(21, 255, 52);
+    
 }
 
 #tel.inicio {
     background-color: #04AA6D;
-    border:1px solid rgb(21, 255, 52);
+    
 }
