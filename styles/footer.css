@@ -5,6 +5,7 @@ body {
     position: relative;
     padding-bottom:3em;
     min-height: 100vh;
+    margin-bottom: 0;
 }
 
 .footer {
@@ -15,11 +16,11 @@ body {
     bottom: 0;
     width: 100%;
     margin-top: 5px;
+    margin-bottom: 0;
 }
 
 a:link, a:visited, a:active {
     text-decoration: none;
     color: white;
     text-shadow: 0.5px 1px;
-
 }
