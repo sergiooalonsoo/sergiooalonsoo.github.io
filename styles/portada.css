@@ -1,73 +1,57 @@
-
-
-
-
-
-h1{
+h1 {
     color: #e1c160;
     font-size: 40px;
     text-align: center;
     font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
-h2{
+
+h2 {
     color: #e1c160;
     text-align: center;
     font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
-
-
-
-@media (max-width: 767px){
-    div{
+@media (max-width: 767px) {
+    div {
         width: 100%;
     }
-    img{
+
+    img {
         width: 99%;
     }
-  
-    
-    
-
 }
-@media (min-width: 768px) and (max-width: 990px){
-    #prueba{
+@media (min-width: 768px) and (max-width: 990px) {
+    #prueba {
         display: inline;
         align-items: center;
         max-width: 5px;
         padding: 5px;
     }
-    img.prueba1{
+
+    img.prueba1 {
         max-width: 99%;
     }
-    p.prueba2{
+
+    p.prueba2 {
         flex: 1;
     }
-    
 }
-@media (min-width: 991px){
-    #prueba{
+@media (min-width: 991px) {
+    #prueba {
         display: flex;
         align-items: center;
         gap: 20px;
     }
-    img.prueba1{
+
+    img.prueba1 {
         max-width: 100%;
     }
-    p.prueba2{
+
+    p.prueba2 {
         flex: 1;
     }
     
-    #logo{
+    #logo {
         width: 100px;
-    }
-    
-   
-    
-   
-
-   
-    
+    }  
 }
-
-    
