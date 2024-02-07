@@ -1,13 +1,19 @@
+/* Aquí simplemente asignamos un tipo de letra. */
+
 body {
     font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
-h1 {
+/* Esto es simplemente para poner los títulos de la página centrado, con un color amarillento y con un tamaño de 40px. */
+
+#tit {
     color: #e1c160;
     font-size: 40px;
     text-align: center;
     font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
+
+/* Le asigna ese color a los elementos h2 de la página y hace que estén subrayados. */
 
 h2 {
     color: #6dd9ec;
@@ -15,11 +21,15 @@ h2 {
     text-decoration: underline;
 }
 
+/* A los elementos con clase col hace que se posicionen a la izquierda y tengan un ancho del 42.5% de la página. El texto centralizado. */
+
 .col {
     float: left;
     width: 42.5%;
     text-align: center;
 }
+
+/* Inserta contenido generado mediante CSS después o antes del contenido del elemento seleccionado. Hace que actúe como un elemento de tabla y ocupe un espacio en el diseño. El both no permitirá que haya elementos flotantes en ningún lado de él.*/
 
 .fila::after {
     content: "";
@@ -31,22 +41,27 @@ img {
     width: 60%;
 }
 
+/* El media hace que se vea la página diferente dependiendo del dispositivo. Este media de aquí está pensado para móviles. Hace que las columnas ocupen un 100% del ancho para que así los elementos se pongan uno debajo del siguiente. */
+
 @media screen and (max-width:767px) {
     .col {
         width: 100%;
     }
 }
 
+/* Este media se aplica en tablets. Esta regla CSS establece que todos los elementos <div> deben tener un tamaño base del 50% del contenedor menos 10 píxeles a cada lado y no deben crecer ni encogerse más allá de este tamaño base dentro de un contenedor flexible. */
+
 @media (min-width: 768px) and (max-width:990px){
     div{
-    flex: 0 0 calc(50% - 10px);
-
+        flex: 0 0 calc(50% - 10px);
     }
+
     img {
         width: 60%;
     }
-
 }
+
+/* Este media se aplica en escritorios. Este sí que cumple con que cada columna ocupe un ancho del 42.5%. */
 
 @media (min-width: 991px){
     .col {
