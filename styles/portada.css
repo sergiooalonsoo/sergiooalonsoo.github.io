@@ -1,55 +1,27 @@
-<<<<<<< HEAD
-
-
-
-
 /*Cogemos el texto le cambiamos el color y le aumentamos la letra y lo alineamos en el centro*/
-h1{
-=======
-h1 {
->>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
-    color: #e1c160;
-    font-size: 40px;
-    text-align: center;
-    font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-}
-<<<<<<< HEAD
-/*Cogemos el texto le cambiamos el color y lo alineamos en el centro*/
-h2{
-=======
 
-h2 {
->>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
-    color: #e1c160;
-    text-align: center;
-    font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+#prueba {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-<<<<<<< HEAD
+/* Éste simplemente edita el ancho máximo de las imagenes metidas dentro de los elementos con la clase prueba1 */
 
+img.prueba1 {
+    max-width: 99%;
+}
 
-/*en el responsive de movil de damos a todo 100% de with para que sea bien en el movil todo el contenido*/
-@media (max-width: 767px){
-    div{
-=======
+/* Éste edita el ancho máximo de los párrafos metidos dentro de los elementos con la clase prueba2 */
+
+p.prueba2 {
+    flex: 1;
+}
+
+/* Este @media está pensado para cómo se verá en móvil. */
+
 @media (max-width: 767px) {
-    div {
->>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
-        width: 100%;
-    }
-
-    img {
-        width: 99%;
-    }
-}
-<<<<<<< HEAD
-/*pone los elemtos en el centro ala imagen le damos un maximo de 99% de ancho*/
-@media (min-width: 768px) and (max-width: 990px){
-    #prueba{
-=======
-@media (min-width: 768px) and (max-width: 990px) {
     #prueba {
->>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
         display: inline;
         align-items: center;
         max-width: 5px;
@@ -64,14 +36,30 @@ h2 {
         flex: 1;
     }
 }
-<<<<<<< HEAD
-/**para el responsive del escritorio convierte un contenedor en un contenedor flexible*/
-@media (min-width: 991px){
-    #prueba{
-=======
+
+/* Este @media está pensado para cómo se verá en tablet. */
+
+@media (min-width: 768px) and (max-width: 990px) {
+    #prueba {
+        display: inline;
+        align-items: center;
+        max-width: 5px;
+        padding: 5px;
+    }
+
+    img.prueba1 {
+        max-width: 99%;
+    }
+
+    p.prueba2 {
+        flex: 1;
+    }
+}
+
+/* Este @media está pensado para cómo se verá en escritorio. */
+
 @media (min-width: 991px) {
     #prueba {
->>>>>>> 4dc802d20e82bcb9b2c0467bc76d836410a29616
         display: flex;
         align-items: center;
         gap: 20px;
@@ -84,4 +72,11 @@ h2 {
     p.prueba2 {
         flex: 1;
     }
+
+    h1,h2 {
+        color: #e1c160;
+        font-size: 40px;
+        text-align: center;
+        font-family: "Red Hat Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    }   
 }
