@@ -1,3 +1,4 @@
+/* Le quitamos al cuerpo del footer el margin, le ponemos un tipo de letra, le damos un color, y le decimos que la posicion sea relativa, le damos un padding inferior de 200px y una altura minima de 100vh. */
 body {
     margin: 0;
     font-family: sans-serif;
@@ -7,6 +8,7 @@ body {
     min-height: 100vh;
 }
 
+/* Le decimos al contenido que esta dentro de la clase footer que cambie el color de el fondo, le damos un padding superior y inferior de 1em y derecha y izquierda 0, alineamos el texto al centro, le damos posicion absoluta, un ancho del 100% y un margen arriba de 100px. */
 .footer {
     background-color: rgb(45, 63, 80);
     padding: 1em 0;
@@ -17,6 +19,7 @@ body {
     margin-top: 100px;
 }
 
+/* Le damos a los links que no han sido visitados, los que estan visitados y los activos que no tengan decoracion, color blanco y sombra. */
 a:link, a:visited, a:active {
     text-decoration: none;
     color: white;

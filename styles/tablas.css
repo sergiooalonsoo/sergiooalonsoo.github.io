@@ -1,7 +1,9 @@
+/* Le ponemos a el cuerpo de la pagina una tipo de letra especifico para el diseño. */
 body {
     font-family: "Red Hat Display", -apple-system, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Centarell,"Helvetica Neue",sans-serif;;
 }
 
+/* Le ponemos a el contenido de la tabla una fuente de un tamaño mayor, le decimos que los bordes celdas de la tabla se fusionen, le damos un ancho del 80% y le ponemos sombra a la tabla. Por ulyimo le ponemos margenes para centrarlo. */
 table {
     font-size: 18px;
     border-collapse: collapse;
@@ -13,6 +15,7 @@ table {
     margin-bottom: 120px; 
 }
 
+/* Le ponemos a el h1 de la pagina una tipo de letra especifico para el diseño. Aparte de aumentar el tamaño de la letra, le cambiamos el color y alineamos los el texto al centro. */
 h1 {
     color: #e1c160;
     font-size: 40px;
@@ -20,22 +23,27 @@ h1 {
     font-family: "Red Hat Display", -apple-system, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Centarell,"Helvetica Neue",sans-serif;
 }
 
+/* Al div con la clase div1 le alineamos el texto al centro. */
 .div1 {
     text-align: center;
 }
 
+/* Los tr de la tabla tienen un padding de .45em que es otra medida. */
 table tr {
     padding: .45em;
 }
 
+/* Le ponemos a table head un color de fondo. */
 thead tr {
     background-color: #6e0737;
 }
 
+/* Le decimos al cuerpo de la tabla y le decimos a los numeros pares de filas que se les ponga ese fondo(en este caso no se nota porque todos tiene el mismo color menos la primera fila.)  */
 tbody tr:nth-child(even) {
     background-color: rgb(29, 42, 53);
 }
 
+/* Le damos al th y td un tamao de letra un padding y que el texto se alinee al centro. */
 table th,
 table td {
     font-size: 1em;
@@ -43,55 +51,68 @@ table td {
     text-align: center;
 }
 
+/* Esta vez le damos exclusivamente al td un borde con esas propiedades.  */
 table td {
     border: 3px solid #fff;
 }
 
+/* Le damos al la cabeza de la tabla color blanco un tamaño de letra y un borde. */
 thead th{
     color: #FFF;
     font-size: 1.15em;
     border: 3px solid #fff;
 }
 
+/* Aqui le decimos que cuando el ancho sea inferior a 767px se active el diseño que explicare a continuacion. Es para moviles. */
 @media (max-width: 767px) {
+
+    /* El borde de la tabla sera de ese color y grosor. */
     table {
         border: 3px solid #6e0737;
     }
 
+    /* Le decimos que oculte el elemento.  */
     table thead tr {
         display: none;
     }
 
+    /* Hacemos que los tr exclusivamente se comporten como bloque. */
     table tr {
         display: block;
     }
 
+    /* Le damos un padding a los th y td. */
     table th, table td {
         padding: .5em
     }
 
+    /* Le decimos exclusivamente a los td que el texto se alinee a la derecha, un tamaño de letra y que se comporte como bloque. */
     table td {
         text-align: right;
         display: block;
         font-size: 1em
     }
 
+    /* Le decimos exclusivamente a los th que tengan esos bordes. */
     table th {
         border: none;
         border: 1px solid #fff;
     }
 
+    
     table td::before {
         content: attr(data-title)": ";
         float: left;
     }
-
+    
+    /* Le decimos al cuerpo de la tabla y le decimos a los numeros pares de filas que se les ponga ese fondo y  color de letra(en este caso si se nota.) */
     tbody tr:nth-child(even) {
         background-color: #6e0737;
         color: #fff;
     }
 }
 
+/* Aqui le decimos que cuando el ancho sea inferior a 990px y superior a 768px se active el diseño que explicare a continuacion. Es para tablets. */
 @media (min-width: 768px) and (max-width: 990px) {
     table {
         font-size: 10px;
@@ -102,31 +123,38 @@ thead th{
         margin-right: 10%;
     }
 
+    /* Le damos altura y padding a los th exclusivamente. */
     table th {
         height: 50px;
         padding: 20px;
 
     }
 
+    /* Le damos altura y padding a los tr exclusivamente.  */
     table tr {
         height: 40px;
         padding: 20px;
 
     }
 
+    /* Le damos altura y padding a los tr de head.  */
     table thead tr {
         height: 40;
         padding: 20px;
 
     }
 
+    /* Le damos altura y padding a los td exclusivamente. */
     table td {
         height: 40px;
         padding: 20px;
     }
 }
 
+/* Aqui le decimos que cuando el ancho sea superior a 991px se active el diseño que explicare a continuacion. Es para ordenadores. */
 @media (min-width: 991px) {
+
+    /* Le ponemos a el contenido de la tabla una fuente de un tamaño mayor, le decimos que los bordes celdas de la tabla se fusionen, le damos un ancho del 80% y le ponemos sombra a la tabla. Por ulyimo le ponemos margenes para centrarlo. */
     table {
         font-size: 18px;
         border-collapse: collapse;
@@ -138,6 +166,7 @@ thead th{
         margin-bottom: 120px; 
     }
     
+    /* Le damos color, un tamaño de letra, que el texto se alinee al centro y un tipo de letra a el titulo de la pagina con id tit. */
     #tit {
         color: #e1c160;
         font-size: 40px;
@@ -145,32 +174,39 @@ thead th{
         font-family: "Red Hat Display", -apple-system, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Centarell,"Helvetica Neue",sans-serif;
     }
     
+    /* Al div con la clase div1 le alineamos el texto al centro. */
     .div1 {
         text-align: center;
     }
 
+    /* Los tr de la tabla tienen un padding de .45em que es otra medida. */
     table tr {
         padding: .45em;
     }
 
+    /* Le ponemos a table head un color de fondo. */
     thead tr {
         background-color: #6e0737;
     }
 
+    /* Le decimos al cuerpo de la tabla y le decimos a los numeros pares de filas que se les ponga ese fondo(en este caso no se nota porque todos tiene el mismo color menos la primera fila.)  */
     tbody tr:nth-child(even) {
         background-color: rgb(29, 42, 53);
     }
 
+    /* Le damos al th y td un tamao de letra un padding y que el texto se alinee al centro. */
     table th, table td {
         font-size: 1em;
         padding: 1em;
         text-align: center;
     }
     
+    /* Esta vez le damos exclusivamente al td un borde con esas propiedades.  */
     table td {
         border: 3px solid #fff;
     }
     
+    /* Le damos al la cabeza de la tabla color blanco un tamaño de letra y un borde. */
     thead th{
         color: #FFF;
         font-size: 1.15em;
