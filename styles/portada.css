@@ -9,6 +9,8 @@ img.prueba1{
 p.prueba2{
     flex: 1;
 }
+
+
 @media (max-width: 767px){
     #prueba{
         display: inline;
@@ -52,6 +54,19 @@ p.prueba2{
     p.prueba2{
         flex: 1;
     }
+    
+    #logo{
+        width: 100px;
+    }
+    h1{
+        text-align: center;
+    }
+   
+   
+    
+   
+
+   
     
 }
 
